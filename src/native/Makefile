@@ -45,7 +45,7 @@ test.html: $(BASE_FILES) nimiq_run.c
 	$(EMCC) $(CFLAGS) -O3 -g $(EMCC_BASE_FLAGS) $(EMCC_WASM_FLAGS) -o $@ $^ ref.c
 
 test: $(BASE_FILES) nimiq_run.c
-	$(CC) -O3 -g $(CFLAGS) -march=native -mtune=native -o $@ $^ opt.c
+	$(CC) -O3 -g $(CFLAGS) -mtune=native -o $@ $^ opt.c
 
 clean:
 	rm -f $(ALL_TARGETS)

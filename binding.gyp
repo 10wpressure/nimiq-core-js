@@ -38,11 +38,9 @@
                     ],
                     "cflags_c": [
                         "-std=c99",
-                        "-march=native"
                     ],
                     "xcode_settings": {
                         "OTHER_CFLAGS": [
-                            "-march=native"
                         ]
                     }
                 },
